@@ -9,7 +9,7 @@ Once you have some hardware and the tools are running.  You need to either clone
 
 Once the project is imported, hit the hammer icon.  The dropdown will give you two build options.  One is for the armv7m (Cortex M3).  The other is armv7em-fpu (Cortex M4F).  The Cortex M3 will run on both platforms.  So if you aren't sure which one to use, go with armv7m.
 
-After the project is built, you can install and run it using Stratify Link.
+After the project is built, you can install and run it using Stratify Link.  Once the settings are correct, you push the download arrow in the bottom right corner of the window.
 
 ![Preview](https://github.com/StratifyLabs/HelloWorld/blob/master/doc/Install-hello-world.png)
 
