@@ -134,7 +134,7 @@
 							<option id="cdt.managedbuild.option.gnu.cross.prefix.231202084" name="Prefix" superClass="cdt.managedbuild.option.gnu.cross.prefix" value="${HOST}-" valueType="string"/>
 							<option id="cdt.managedbuild.option.gnu.cross.path.152108898" name="Path" superClass="cdt.managedbuild.option.gnu.cross.path" value=" ${PathDelimiter}${TOOLSPATH}/bin" valueType="string"/>
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross.572789559" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
-							<builder autoBuildTarget="all" buildPath="${workspace_loc:/HelloWorld}/Release" cleanBuildTarget="clean" id="org.eclipse.cdt.build.core.internal.builder.315223237" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="org.eclipse.cdt.build.core.internal.builder"/>
+							<builder autoBuildTarget="all" buildPath="${workspace_loc:/HelloWorld}/build_release_armv7em_fpu" cleanBuildTarget="clean" id="org.eclipse.cdt.build.core.internal.builder.261619547" incrementalBuildTarget="all" managedBuildOn="true" name="CDT Internal Builder" superClass="org.eclipse.cdt.build.core.internal.builder"/>
 							<tool id="cdt.managedbuild.tool.gnu.cross.c.compiler.616156074" name="Cross GCC Compiler" superClass="cdt.managedbuild.tool.gnu.cross.c.compiler">
 								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.option.optimization.level.1727116031" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.c.optimization.level.size" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.302937115" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
@@ -185,15 +185,16 @@
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="build"/>
+		<configuration configurationName="release_macx"/>
 		<configuration configurationName="release_win">
 			<resource resourceType="PROJECT" workspacePath="/HelloWorld"/>
 		</configuration>
-		<configuration configurationName="Release"/>
-		<configuration configurationName="release_macx"/>
-		<configuration configurationName="build"/>
 		<configuration configurationName="build_release_armv7m">
 			<resource resourceType="PROJECT" workspacePath="/HelloWorld"/>
 		</configuration>
+		<configuration configurationName="build_release_armv7em_fpu"/>
+		<configuration configurationName="Release"/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
@@ -212,20 +213,12 @@
 					<openAction enabled="true" filePath=""/>
 					<parser enabled="true"/>
 				</buildOutputProvider>
-				<scannerInfoProvider id="specsFile">
-					<runAction arguments="-D__CoActionOS__ -D__lpc17xx -E -P -v -dD &quot;${plugin_state_location}/specs.cpp&quot;" command="arm-cm3-eabi-g++" useDefault="true"/>
-					<parser enabled="true"/>
-				</scannerInfoProvider>
 			</profile>
 			<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
 				<buildOutputProvider>
 					<openAction enabled="true" filePath=""/>
 					<parser enabled="true"/>
 				</buildOutputProvider>
-				<scannerInfoProvider id="specsFile">
-					<runAction arguments="-D__CoActionOS__ -D__lpc17xx -E -P -v -dD &quot;${plugin_state_location}/specs.c&quot;" command="arm-cm3-eabi-g++" useDefault="true"/>
-					<parser enabled="true"/>
-				</scannerInfoProvider>
 			</profile>
 		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.exe.release.933537612.2007164391.1935209187.1360845710">
@@ -264,10 +257,6 @@
 					<openAction enabled="true" filePath=""/>
 					<parser enabled="true"/>
 				</buildOutputProvider>
-				<scannerInfoProvider id="specsFile">
-					<runAction arguments="-D__CoActionOS__ -D__lpc17xx -E -P -v -dD &quot;${plugin_state_location}/specs.cpp&quot;" command="arm-cm3-eabi-g++" useDefault="true"/>
-					<parser enabled="true"/>
-				</scannerInfoProvider>
 			</profile>
 		</scannerConfigBuildInfo>
 	</storageModule>
