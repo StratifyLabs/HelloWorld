@@ -1,10 +1,12 @@
+
 #include <cstdio>
+#include <sapi/sys.hpp>
+
 
 int main(int argc, char * argv[]){
-	if( argc > 1 ){
-		printf("Hello %s\n", argv[1]);
-	} else {
-		printf("Hello World\n");
-	}
+	Cli cli(argc, argv);
+	cli.set_publisher("Stratify Labs, Inc");
+	cli.handle_version();
+	printf("Hello World\n");
 	return 0;
 }

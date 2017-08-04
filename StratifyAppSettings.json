@@ -1,9 +1,9 @@
 {
-    "LocalBuild": "build_release_armv7em_fpu",
+    "LocalBuild": "build_release_armv7m",
     "LocalInstallPath": "/app/.install",
     "LocalIsRam": false,
     "LocalIsStartup": false,
-    "LocalProjectId": "-KYj6kiEQ3U56dIozdqM",
+    "LocalProjectId": "-Kms00U6xlEby6A9NArS",
     "buildprefix": "build_",
     "description": "HelloWorld is a simple demo app that uses the standard output to print a simple message.",
     "github": "https://github.com/StratifyLabs/HelloWorld",
@@ -14,5 +14,5 @@
     "ram": 8192,
     "tags": "demo",
     "type": "StratifyApp",
-    "version": "1.3"
+    "version": "1.4"
 }
