@@ -1,2 +1,4 @@
 /build_release_armv7m/
 /build_release_armv7em_fpu/
+cmake_*
+build_*
