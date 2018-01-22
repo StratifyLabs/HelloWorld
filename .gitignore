@@ -2,3 +2,4 @@
 /build_release_armv7em_fpu/
 cmake_*
 build_*
+*.user
