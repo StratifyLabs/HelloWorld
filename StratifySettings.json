@@ -1,6 +1,6 @@
 {
     "buildprefix": "build_",
-    "change": "Fixed a bad publish",
+    "change": "Fixed RAM use on publish",
     "changes": {
         "-L2JSbxGq0ytPyc_nJc5": {
             "description": "More version testing",
@@ -9,6 +9,10 @@
         "-L36hd857DSirfLgm3ri": {
             "description": "Fixed a bad publish",
             "version": "1.6"
+        },
+        "-L4wD_jLmq1ysS46KBrj": {
+            "description": "Fixed RAM use on publish",
+            "version": "1.7"
         }
     },
     "description": "HelloWorld is a simple demo app that uses the standard output to print a simple message.",
@@ -21,5 +25,5 @@
     "tags": "demo",
     "type": "StratifyApp",
     "uid": "QSW7bQHeDqhJEcZ0mxQ5SmEYUSL2",
-    "version": "1.6"
+    "version": "1.8"
 }
