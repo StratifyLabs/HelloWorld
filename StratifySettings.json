@@ -1,6 +1,6 @@
 {
     "buildprefix": "build_",
-    "change": "Fixed RAM use on publish",
+    "change": "Added arch's for 3.5.x",
     "changes": {
         "-L2JSbxGq0ytPyc_nJc5": {
             "description": "More version testing",
@@ -13,6 +13,10 @@
         "-L4wD_jLmq1ysS46KBrj": {
             "description": "Fixed RAM use on publish",
             "version": "1.7"
+        },
+        "-L76bwR7RKJs7p4V_Raz": {
+            "description": "Added arch's for 3.5.x",
+            "version": "1.9"
         }
     },
     "description": "HelloWorld is a simple demo app that uses the standard output to print a simple message.",
@@ -25,5 +29,5 @@
     "tags": "demo",
     "type": "StratifyApp",
     "uid": "QSW7bQHeDqhJEcZ0mxQ5SmEYUSL2",
-    "version": "1.8"
+    "version": "1.9"
 }
