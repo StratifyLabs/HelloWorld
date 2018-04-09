@@ -1,6 +1,6 @@
 {
     "buildprefix": "build_",
-    "change": "Added arch's for 3.5.x",
+    "change": "Additional arch descriptions (f5sh)",
     "changes": {
         "-L2JSbxGq0ytPyc_nJc5": {
             "description": "More version testing",
@@ -17,6 +17,10 @@
         "-L76bwR7RKJs7p4V_Raz": {
             "description": "Added arch's for 3.5.x",
             "version": "1.9"
+        },
+        "-L9fR3-urqzssGogJZ_h": {
+            "description": "Additional arch descriptions (f5sh)",
+            "version": "1.10"
         }
     },
     "description": "HelloWorld is a simple demo app that uses the standard output to print a simple message.",
@@ -29,5 +33,5 @@
     "tags": "demo",
     "type": "StratifyApp",
     "uid": "QSW7bQHeDqhJEcZ0mxQ5SmEYUSL2",
-    "version": "1.9"
+    "version": "1.10"
 }
