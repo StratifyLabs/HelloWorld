@@ -32,8 +32,6 @@ message(STATUS "Building App sources: " ${SOS_APP_SOURCELIST})
 
 
 if( ${SOS_BUILD_CONFIG} STREQUAL arm )
-	set(SOS_APP_LIBRARIES nrfsdk)
-	set(SOS_APP_INCLUDE_DIRECTORIES ${TOOLCHAIN_INC_DIR}/nrfsdk ${TOOLCHAIN_INC_DIR}/nrfsdk/s140)
 	include(${SOS_TOOLCHAIN_CMAKE_PATH}/sos-app-std.cmake)
 elseif( ${SOS_BUILD_CONFIG} STREQUAL link )
 	set(SOS_APP_ARCH link)
