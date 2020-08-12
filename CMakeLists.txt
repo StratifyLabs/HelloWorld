@@ -1,12 +1,15 @@
 #Copy this file to the application project folder as CMakeLists.txt
 cmake_minimum_required (VERSION 3.6)
 
-#Grabs the SOS CMAKE SDK from the default install location -- update as needed
-if( ${CMAKE_HOST_SYSTEM_NAME} STREQUAL "Darwin" )
-	set(SOS_TOOLCHAIN_CMAKE_PATH /Applications/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/cmake)
-elseif( ${CMAKE_HOST_SYSTEM_NAME} STREQUAL "Windows" )
-	set(SOS_TOOLCHAIN_CMAKE_PATH C:/StratifyLabs-SDK/Tools/gcc/arm-none-eabi/cmake)
+# Grab the SDK location
+if(NOT DEFINED SOS_SDK_PATH AND DEFINED ENV{SOS_SDK_PATH})
+	set(SOS_SDK_PATH $ENV{SOS_SDK_PATH})
+	message(STATUS "Using SDK from environment " ${SOS_SDK_PATH})
 endif()
+if(NOT DEFINED SOS_SDK_PATH)
+	message(FATAL_ERROR "Please set environment variable SOS_SDK_PATH to location of the StratifyLabs-SDK directory")
+endif()
+set(SOS_TOOLCHAIN_CMAKE_PATH ${SOS_SDK_PATH}/Tools/gcc/arm-none-eabi/cmake)
 
 include(${SOS_TOOLCHAIN_CMAKE_PATH}/sos-variables.cmake)
 include(${SOS_TOOLCHAIN_CMAKE_PATH}/sos-sdk.cmake)
@@ -19,7 +22,7 @@ elseif( ${SOS_BUILD_CONFIG} STREQUAL link )
 endif()
 
 # This will set the default RAM used by the application
-set(SOS_RAM_SIZE 4096)
+set(SOS_RAM_SIZE 32768)
 
 #Add sources to the project
 sos_sdk_add_subdirectory(SOS_SOURCELIST ${CMAKE_SOURCE_DIR}/src)
