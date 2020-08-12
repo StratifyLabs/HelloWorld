@@ -22,7 +22,7 @@ elseif( ${SOS_BUILD_CONFIG} STREQUAL link )
 endif()
 
 # This will set the default RAM used by the application
-set(SOS_RAM_SIZE 32768)
+set(SOS_RAM_SIZE 4096)
 
 #Add sources to the project
 sos_sdk_add_subdirectory(SOS_SOURCELIST ${CMAKE_SOURCE_DIR}/src)
