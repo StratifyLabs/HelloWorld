@@ -9,6 +9,8 @@ set(CMAKE_MODULE_PATH ${SOS_SDK_PATH}/cmake)
 set(CMAKE_TOOLCHAIN_FILE ${CMAKE_MODULE_PATH}/sos-toolchain.cmake)
 include(sos-sdk)
 
+include(StratifyOS_crt)
+
 set(RAM_SIZE 4096)
 project(HelloWorld CXX C)
 
@@ -28,6 +30,8 @@ target_compile_options(${RELEASE_TARGET}
 	)
 
 set_property(TARGET ${RELEASE_TARGET} PROPERTY CXX_STANDARD 17)
+
+set(DEPENDENCIES StratifyOS_crt)
 
 sos_sdk_app_add_arch_targets("${RELEASE_OPTIONS}" "${DEPENDENCIES}" ${RAM_SIZE})
 if(SOS_IS_LINK)
