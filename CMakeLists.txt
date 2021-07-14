@@ -19,6 +19,7 @@ message(STATUS "Stratify API Test Executable ${RELEASE_TARGET}")
 add_executable(${RELEASE_TARGET})
 target_sources(${RELEASE_TARGET}
 	PRIVATE
+	${CMAKE_CURRENT_SOURCE_DIR}/README.md
 	${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/sl_config.h
 	${CMAKE_CURRENT_SOURCE_DIR}/sl_settings.json
