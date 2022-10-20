@@ -15,21 +15,8 @@ target_sources(${RELEASE_TARGET}
 	${CMAKE_CURRENT_SOURCE_DIR}/README.md
 	${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/sl_config.h
-	${CMAKE_CURRENT_SOURCE_DIR}/sl_settings.json
-	)
-
-target_compile_options(${RELEASE_TARGET}
-	PRIVATE
-	-Os)
-
+	${CMAKE_CURRENT_SOURCE_DIR}/sl_settings.json)
 set_property(TARGET ${RELEASE_TARGET} PROPERTY CXX_STANDARD 17)
-
-target_compile_options(${RELEASE_TARGET}
-	PRIVATE
-	-Os)
-
-set(DEPENDENCIES StratifyOS_crt)
-
 cmsdk2_app_add_dependencies(
 	TARGET ${RELEASE_TARGET}
 	DEPENDENCIES StratifyOS_crt
